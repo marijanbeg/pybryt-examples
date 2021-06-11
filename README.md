@@ -4,7 +4,11 @@
 
 In this repository, we collect short PyBryt examples we encountered issues with.
 
-## Current issues
+## Open
 
-1. "Problem with easy problems"
-2. Notebook code that is not in functions
+- [ ] ["Problem with easy problems"](examples/01-easy-problems/assignment.ipynb)
+- [ ] [Notebook code that is not in functions](examples/02-code-outside-functions/assignment.ipynb)
+
+## Resolved
+
+- [x] [Grouping feedback messages](examples/03-grouping-feedback-messages/assignment.ipynb)
