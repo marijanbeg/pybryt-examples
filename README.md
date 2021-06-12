@@ -8,7 +8,6 @@ In this repository, we collect short PyBryt examples we encountered issues with.
 
 - [ ] ["Problem with easy problems"](examples/01-easy-problems/assignment.ipynb)
 - [ ] [Notebook code that is not in functions](examples/02-code-outside-functions/assignment.ipynb)
+- [ ] [Grouping feedback messages](examples/03-grouping-feedback-messages/assignment.ipynb)
 
-## Resolved
 
-- [x] [Grouping feedback messages](examples/03-grouping-feedback-messages/assignment.ipynb)
