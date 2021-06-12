@@ -20,6 +20,6 @@ def square(a):
     return res
 
 
-pybryt.Value(square([-55, 13, 57, 0, 1, 2, -44]),
+pybryt.Value(square([-555, 13, 57, 0, 1, 2, -44]),
              success_message='SUCCESS 4: Your final solution is correct.',
              failure_message='ERROR 4: The final solution is wrong.')
