@@ -4,7 +4,7 @@
 
 In this repository, we collect short PyBryt examples we encountered issues with. The collection of examples in this repository can eventually serve as a part of FAQ for PyBryt.
 
-## Open
+## Examples
 
 - [ ] ["Problem with easy problems"](examples/01-easy-problems/assignment.ipynb)
 - [ ] [Notebook code that is not in functions](examples/02-code-outside-functions/assignment.ipynb)
