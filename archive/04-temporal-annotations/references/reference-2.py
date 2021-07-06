@@ -18,19 +18,19 @@ def lucas(n):
 
     lucas_series[1] = 1
     container.add(pybryt.Value(lucas_series,
-                              name='second_element',
-                              success_message='SUCCESS 2: Your second element is correct.',
-                              failure_message='ERROR 2: Please check your second element in the series.'))
-    
+                               name='second_element',
+                               success_message='SUCCESS 2: Your second element is correct.',
+                               failure_message='ERROR 2: Please check your second element in the series.'))
+
     if n == 2:
         return lucas_series
 
     for i in range(2, n):
         lucas_series[i] = lucas_series[i-1] + lucas_series[i-2]
         container.add(pybryt.Value(lucas_series,
-                                  name='other_elements',
-                                  success_message='SUCCESS 3: You are generating n>2 elements right.',
-                                  failure_message='ERROR 3: Hmmm... Are you summing the previous two elements right?'))
+                                   name='other_elements',
+                                   success_message='SUCCESS 3: You are generating n>2 elements right.',
+                                   failure_message='ERROR 3: Hmmm... Are you summing the previous two elements right?'))
 
     return lucas_series
 

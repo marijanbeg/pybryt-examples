@@ -41,11 +41,3 @@ jobs:
         make clean-output
         make run-ipynb
         make clean-output
-        make run-ipynb
-        make clean-pybryt
-        make run-ipynb
-        make clean-okpy
-        make run-ipynb
-        make clean-nbgrader
-        make run-ipynb
-        make clean-solution

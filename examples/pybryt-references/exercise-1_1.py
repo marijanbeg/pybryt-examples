@@ -21,7 +21,7 @@ def insertion_sort(x):
             x[j+1] = x[j]
             j -= 1
             j_col.add(pybryt.Value(j))
-            
+
         x[j+1] = current
         x_col.add(pybryt.Value(x))
 
