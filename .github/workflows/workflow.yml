@@ -33,11 +33,3 @@ jobs:
 
     - name: flake8 on Jupyter notebooks
       run: make test-flake8-nb
-
-    - name: Test Makefile targets
-      run: |
-        make compile-refs
-        make clean-pkl-refs
-        make clean-output
-        make run-ipynb
-        make clean-output
