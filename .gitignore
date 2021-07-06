@@ -1,1 +1,7 @@
+.ok_storage.db
+.ipynb_checkpoint
+.vscode
+__pycache__
+.ipynb_checkpoints
 *.pkl
+tmp_table.dat

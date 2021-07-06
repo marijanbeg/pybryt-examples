@@ -1,0 +1,51 @@
+name: Tests
+
+on: [push, pull_request]
+
+jobs:
+  tests:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+    defaults:
+      run:
+        shell: bash -l {0}
+
+    steps:
+    - name: Initialisation
+      uses: actions/checkout@v2
+
+    # Python version is part of environment.yml
+    - name: Create conda environment from environment.yml
+      uses: conda-incubator/setup-miniconda@v2
+      with:
+        environment-file: environment.yml
+
+    - name: Install testing libraries
+      run: python -m pip install nbval flake8 flake8-nb
+
+    - name: nbval on Jupyter notebooks
+      run: make test-nbval
+
+    - name: flake8 on Python files
+      run: make test-flake8
+
+    - name: flake8 on Jupyter notebooks
+      run: make test-flake8-nb
+
+    - name: Test Makefile targets
+      run: |
+        make compile-refs
+        make clean-pkl-refs
+        make clean-output
+        make run-ipynb
+        make clean-output
+        make run-ipynb
+        make clean-pybryt
+        make run-ipynb
+        make clean-okpy
+        make run-ipynb
+        make clean-nbgrader
+        make run-ipynb
+        make clean-solution
